@@ -65,7 +65,7 @@ body{
 
 .carousel-item{
     height: auto;
-    background: #777;
+    background: #999;
     margin-top: 5%;
     position: relative;
 }
@@ -80,8 +80,26 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    padding-bottom: 15rem !important;
+    padding-bottom: 12rem !important;
     padding-left: 40px !important;
+}
+@media(max-width: 991px){
+    .carousel-item .container.text{
+        padding-bottom: 3rem !important;
+    }
+    .carousel-item .container.text h1{
+        font-size: 20px;
+    }
+
+    .carousel-item .container.text a{
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 763px){
+    .carousel-item .container.text .inline-text{
+        display: none;
+    }
 }
 
 .btn-primary{
